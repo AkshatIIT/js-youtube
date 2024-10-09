@@ -9,3 +9,14 @@ let gender= true// it is boolean
 // symbol: unique
 console.log(typeof null) // it is an object
 console.log(typeof undefined) // it is undefined.
+
+//Array, Objects, Functions
+const heros=["shakti", "Akshat","Doga"] //=> this is array
+let myObj = {
+    name: "hitesh",
+    age: 22,
+} //=>this is object
+const myFunction=function(){
+    console.log("Hello man!!");
+}
+console.log(typeof myFunction);
