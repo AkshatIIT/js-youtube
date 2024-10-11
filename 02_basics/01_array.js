@@ -33,5 +33,5 @@ console.log(real_another_array) // output is [1,2,3,4,5,6,7,6,7,4,5]
 //to convert the anything to array you use this:
 console.log(Array.isArray("Hitesh")) // check whether "Hitesh is array or not"
 console.log(Array.from("Hitesh")) //convert "Hitesh" to array.
-console.log(Array.from({name:"hitesh"})) //interesting it will return empty array because it don't know whether to make aaray with key aor value.
+console.log(Array.from({name:"hitesh"})) //interesting it will return empty array because it don't know whether to make aaray with key or value.
 

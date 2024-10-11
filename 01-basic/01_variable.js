@@ -9,3 +9,4 @@ accountEmail="akku"
 accountpassword="2122"
 accountCity="Bengaluru"
 console.table([accountEmail,accountId,accountpassword,accountCity]) // it will print all the value of variable in table.
+
