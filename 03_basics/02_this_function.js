@@ -6,7 +6,7 @@ const user={
     }
 }
 user.welcomemessage();
-//This function is used inside an object works but in function it doessn't works:
+//This function is used inside an object works but in function it doesn't works:
 // Example: function chai(){
 //let username="hitesh";console.log(this.username); //this will not work}  
 //Defining function using arrow 
