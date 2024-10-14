@@ -41,5 +41,5 @@ function returnSecondValue(getArray){
 }
 const myNewArray=[200,400,100]
 console.log(returnSecondValue(myNewArray))
- 
+
 
