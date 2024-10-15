@@ -46,3 +46,4 @@ const myTotal=myNumms.reduce(function(acc,current){
     return acc+current
 },0)
 console.log(myTotal)
+
