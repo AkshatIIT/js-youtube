@@ -1,0 +1,33 @@
+<!--
+getElementById: used in console to get the element by it Id: 
+1. Write in console: document.getElementById(id)
+2. To find the classname of the id. you have to write document.getElementById(id).className
+3. getElementById(id).innerHTML: will give all the value inside that body
+4. getElementById(id).innerText will give the content in the id which is visible
+5.getElementById(id).textcontent: will give the content in that id (including content which is invisible if we use span)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+<body class="bg-black">
+    <div class="bg-black">
+            <h1 id="title" class="heading"> DOM learning on Chai aur code <span style="display: none;">You are mad</span></h1>
+            <h2 class="big"> you are a good guy</h2>
+            <h3>I am from Kolkata</h3>
+            <h4>Working in AirIndia</h4>
+            <p>Loren ipsum dolar it amet</p>
+            <h2>hello!!</h2>
+    </div>
+</body>
+</html>
