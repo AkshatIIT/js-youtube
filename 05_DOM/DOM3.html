@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>"Coding with Akshat"</title>
+</head>
+<body style="background-color: black;color:white">
+    <ul class="language">
+        <li> Javascrip</li
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        let new_language=document.createElement('li')
+        new_language.innerHTML=`${langName}`;
+        document.querySelector('.language').appendChild(new_language)
+    }
+    //adding the new list 
+    addLanguage("Akshat")
+    function addOptiLanguage(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang');
+    //Editing the existing list.
+    const SecondLang=document.querySelector('li:nth-child(1)')
+    console.log(SecondLang)
+    let newli=document.createElement('li');
+    newli.innerHTML="Akku"
+    SecondLang.replaceWith(newli)
+//delete the list
+const delete_li=document.querySelector("li:last-child")
+delete_li.remove()
+</script>
+</html>
