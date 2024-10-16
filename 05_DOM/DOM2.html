@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>DOM part 2</title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
+    </div>
+</body>
+<script>
+    let Par=document.getElementsByClassName("parent");
+    let parent=document.querySelector('.parent') //. is used with the classes.
+    console.log(parent);
+    // console.log(Par);
+    console.log(parent.children); //return children in the form of html collection
+    console.log(parent.children[1].innerHTML); //print the content inside it
+    for (let index = 0; index < parent.children.length; index++) {
+        console.log(parent.children[index]); //Looping overv the HTML collection
+        
+    }
+    console.log(parent.firstElementChild) //print the first child i.e Monday
+    console.log(parent.lastElementChild);
+    //you can also get parent from the child
+    dayOne=document.querySelector('.day');
+    console.log(dayOne.parentElement)
+    console.log(dayOne.nextElementSibling) //give us next sibling of it
+    console.log("Node: ",parent.childNodes); //will have 9 element in it here they not only consider Monday tuesday but also the new line things 
+    //To create an element:
+    const div=document.createElement('div'); //will create a div element
+    console.log(div);
+    div.className='main'; //will create a class
+    div.id=Math.random();
+    div.setAttribute("title","generated title");
+    div.style.backgroundColor="green";
+    div.style.padding='12px';
+    div.innerHTML="Chai aur code"
+    document.body.appendChild(div)
+</script> 
+</html>
