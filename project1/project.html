@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Scheme Switch</title>
-    
+    <title>Project 1</title>
 </head>
-<style>
-    .B{
-      height: 150px;
-      width: 150px;
-      border-radius: 25px; 
-    }
-</style>
 <body>
-    <h1>Color Scheme Switcher</h1>
-    <span class="button" id="grey"><button class="B" style="background-color: grey;"></button></span>
-    <span class="button" id="blue"><button class="B" style="background-color: blue;"></button></span>
-    <span class="button" id="yellow"><button class="B" style="background-color: yellow;"></button></span>
-    <span class="button" id="green"><button class="B" style="background-color: green;"></button></span>
+    <div class="Color">
+        <h1><strong>Color Scheme Switcher</ strong> </h1>
+        
+    </div>
 
 </body>
-<script src="Button_query.js">
-    
+<script>
+    const arr=['grey','white','blue','yellow']
+    arr.forEach(element => {
+        const button=document.createElement('button')
+        button.style.height='150px'
+        button.style.width='150px'
+        button.style.backgroundColor=element
+        button.onclick=function(){
+            const body=document.querySelector('body')
+            body.style.backgroundColor=element
+
+        }
+        document.querySelector('.Color').appendChild(button)
+
+    });
 </script>
 </html>
