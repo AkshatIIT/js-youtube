@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+</head>
+<body>
+    <h1><strong>BMI Calculator</strong></h1>
+    <form>
+        <p>Height in CM: <input type="text" id="height"></p>
+        <p>Weight in KG: <input type="text" id='weight'></p>
+        <button> Calculate </button>
+        <div id="result"></div>
+
+    </form>
+</body>
+<script>
+    
+    const form=document.querySelector('form')
+    form.addEventListener('submit',function(e){ 
+        e.preventDefault();
+        const height=parseInt(document.querySelector('#height').value);
+        // console.log(height)
+        const weight=parseInt(document.querySelector('#weight').value)
+        // console.log(height)
+        const result=document.querySelector("#result")
+        const r=height/weight
+        result.textContent=`The BMI is ${r}`;
+        
+
+    });
+
+
+    
+
+
+</script>
+</html>
