@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+</head>
+<body>
+    <h1> You local time</h1>
+    <div id="clock"></div>
+</body>
+<script>
+    setInterval(function(){
+        const clock=document.getElementById('clock')
+    let date=new Date()
+    const time=date.toLocaleTimeString()
+    const button=document.createElement('button');
+    button.textContent=time
+    button.style.backgroundColor='orange'
+    button.style.height='30px'
+    button.style.width='80px'
+    clock.appendChild(button)
+    },2000)
+    
+
+</script>
+</html>
